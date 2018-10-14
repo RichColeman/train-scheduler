@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Train Scheduler</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">Train Scheduler</h1>
+            <p class="lead">When you need to catch the train!</p>
+            <hr class="my-1">
+        </div>
+    </div>
+
+    <div id="train-list" class="container">
+        <div class="row ">
+            <div class="col-3">Train Name</div>
+            <div class="col-3">Destination</div>
+            <div class="col-2">Frequency (min)</div>
+            <div class="col-2">Next Arrival</div>
+            <div class="col-2"> Minutes Away</div>
+        </div>
+    </div>
+<br><br><br>
+        <form action="">
+            <label class="form-control">Train Name</label>
+            <input id="train-name" class="form-control" type="text" placeholder="Name of Train (e.g. 30th Street Greyhound)"><br>
+
+            <label class="form-control">Destination</label>
+            <input id="destination" class="form-control" type="text" placeholder="Where is your train going?"><br>
+
+            <label class="form-control">First Train Time (military time)</label>
+            <input id="first-time" class="form-control" type="text" placeholder=""><br>
+
+            <label class="form-control">Frequency</label>
+            <input id="frequency" class="form-control" type="text" placeholder="How often does this train arrive (use minutes)?"><br>
+            <button id="submit" type="submit">Submit</button>
+
+            <br><br><br>
+
+        </form>
+
+
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src='https://www.gstatic.com/firebasejs/5.5.3/firebase.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>
